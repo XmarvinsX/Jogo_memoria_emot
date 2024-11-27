@@ -3,7 +3,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #fc1e8a;
+    /*background-color: #fc1e8a;*/
+    background-image: url("./emojis.webp");
+    background-size: cover;
     user-select: none;
 }
 
@@ -48,7 +50,7 @@ h2 {
     background-color: #262809;
 }
 
-.game {border: 1px solid red;
+.game {
     width: 430px;
     height: 430px;
     display: flex;
@@ -68,7 +70,8 @@ h2 {
     background-color: #fff;
     font-size: 3em;
     transform: rotateY(180deg);
-    transition: 0.35s;
+    transition: 0.25s;
+    cursor: grab;
 }
 
 .item::after{
@@ -76,11 +79,13 @@ h2 {
     position: absolute;
     inset: 0;
     background: #404040;
+   
+    background-size: 100px;
     transition: 0.25s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
-    opacity: 0.8;
 }
+
 
 .item.boxOpen{
     transform: rotateY(0deg);

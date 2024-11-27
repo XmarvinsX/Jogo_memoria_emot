@@ -50,4 +50,8 @@ function CheckMath(){
     }
     
     openCards = [];
+
+    if(document.querySelectorAll(".boxMatch").length === emojis.length){
+        alert("Vitóriaaaa!")
+    }
 };
